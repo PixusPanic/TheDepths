@@ -1,0 +1,225 @@
+GameTips: {
+	// DepthsTip0: In certain worlds, the Tax Collector sits bound in the Depths inside a crystalized shell. If only there were a way to free him . . .
+	// DepthsTip1: If you dig deep enough in certain worlds, you might end up in the Depths!
+	// DepthsTip2: In certain worlds, you must defeat Chasme to change the world forever. Using a Ruby Relic at a Gemforge might summon her...
+	// DepthsTip3: Arquerite is super poisonous! Craft a Crystal Skull to be immune to its poisoning.
+	// DepthsTip4: While a small dip into quicksilver may be fine, don't swim in it without drinking a Crystal Skin Potion first!
+	// DepthsTip5: With adequate gear equipped, you can spend up to 16 seconds in quicksilver without consequences!
+	// DepthsTip6: When against Chasme, a magical barrier between the Depths and the underground is created. Going through it allows for a safe exit from the fight.
+}
+
+common: {
+	// Banner: " Banner"
+	// Banner2: Nearby players get a bonus against:
+}
+
+SetBonus: {
+	// GeodeHelmet: Summons 4 Geode Crystals that will deal 20 damage
+	/* MercuryHelmet:
+		'''
+		3 defense
+		Mercury cannot infect you
+		''' */
+	/* NightwoodHelmet:
+		'''
+		Doubles duration of Mercury Footing
+		Halves the duration of Mercury Poisoning from Quicksilver
+		''' */
+	// QuartzArmor: Increases Whip Range and Speed by 35%
+	/* OnyxRobeWizard:
+		'''
+		2 defense
+		Increases Magic critical strike chance by 18%
+		''' */
+	/* OnyxRobeMagic:
+		'''
+		3 defense
+		Increases maximum mana by 100
+		''' */
+	// PetrifiedWoodHelmet: Increases damage reduction by 10%
+}
+
+Quest: {
+	Description: {
+		// Chasmefish: There is an old legend that says that a royal fish was born on the rise of a solar eclipse, and was cursed to the Depths far below. I want you to find this fish so I can see how powerful it truly is!
+		// Relicarp: If you don't know already, there is a magical cult in the Depths that worship gemstones. Their practices remain unknown to me, but you know what I do know? They have a magical fish that looks just like their special cult relics. Go get one for me so I can find out what happens when I place it in a pot!
+		// GlimmerDepthFish: I was playing on a layer of quartz when all of a sudden, a chunk broke off into the quicksilver! It promptly grew fins and swam away before I could catch it. I've always wanted to know what quartz tastes like, so get me this fish so I can be the first to taste it!
+	}
+
+	CaughtLocation: {
+		// Chasmefish: Caught in Caverns
+		// Relicarp: Caught in Caverns
+		// GlimmerDepthFish: Caught in Caverns
+	}
+}
+
+Recipes.NearQuicksilver: Рядом с ртутью
+
+ShaleConfig: {
+	// SlateBlock: Slate Block
+	ShaleBlock: Блок сланца
+	// SlateBricks: Slate Bricks
+	ShaleBricks: Кирпичи сланца
+	// Slatestone: Slatestone
+	Shalestone: Сланец
+}
+
+Bestiary: {
+	# Enemies
+	// AlbinoBat: A victim of a rare pigment mutation, this bat roams the deeper cavern system, blending in with the surrounding mercury in order to survive.
+	// Archroma: A cousin of pinky with a similar density, making them pack a powerful punch. They love to consume money.
+	// CrystalKing: A royal king of geomancy. Although unable to walk, he can teleport like most other mages.
+	// Ferroslime: This slime may appear spiky, but that's only its ferrofluid spiking up to come off as more threatening than it is.
+	// Geomancer: Loyal cult members well-practiced in geomancy. Legends have it that they worship a living shadowflame being.
+	// GoldBat: A rare bat in the depths that was cursed by the geomancers to be a gem-like creature. Despite their name, they are actually the same color as topaz.
+	// KingCoal: He's no merry old soul; he's the Crystal King's rival brother! Born in fire, he will do all he can to take you down!
+	// DepthsWorm: A stone and sapphire serpent with water flowing through its veins. It carries a shovel like no other.
+	// Shade: Beings of pure darkness, freely floating throughout the air, that drift through the depths. A group of them is called a darkening.
+	// ShadowBat: This half-black half-emerald bat is a stonger varient of the bats found in the depths. Is it a bat's shadow, or a shadow made of bats?
+	// ShadowSlime: A purely-black slime that roams the hardened depths. Getting hit by it could cause severe blinding.
+	// EnchantedNightmareWorm: Over time, worms that have found their way to the deep underground will have discovered the Nightmare Grove. Forced to blend in, they inherit the natural purple tint of their surrounding environment.
+	// QuartzCrawler: A black snail with a shell that looks very similar to a chunk of quartz. An especially tasty treat to fish that lurk in the mercury.
+	// AlbinoRat: A rare pigmented rat that attempted to blend in with the surrounding quartz and mercury. How are you going to catch fish with this thing?
+	// Chasme: A giant construct made of pure Shalestone. Often confused for Chasme's soul, this was her only friend, and by extension, her tool of destruction and safety.          Chasme was very powerful, but she never wanted a fight. Perhaps this was all a big misunderstanding?
+	// ChasmeHands: Shalestone manifestations made by Chasme to help shape the Depths to what you see today. These have no correlation to the hands of those from Deerclops.           You destroyed her, and her home, all for the freedom of the ancient spirits. Happiness comes at a cost.
+	// ChasmeSoul: The real Chasme was born on a total eclipse, permanently tainting her. She was locked away in the deep underground, where she turned it into an eternal dark abyss.        Chasme was all victim to a series of unfortunate events. May she be understood elsewhere.
+	// CrystalBoundTaxCollector: The crystal formation remains of a greedy fellow. Shortly after Chasme was sealed, his ambitions lured him into the depths, where he was solidified by her geomancer cult.
+}
+
+PlayerDeathReason: {
+	Gemforge: {
+		// 0: "{0} attempted to summon a cult in pure light."
+		// 1: "{0} moved a gemforge away from its home."
+		// 2: "{0} tried to burn a relic outside of the Depths."
+	}
+
+	MercuryPoisoning: {
+		// 0: "{0} couldn't find a cure."
+		// 1: "{0} succumbed to their illness."
+		// 2: "{0} drank a lightbulb."
+		// 3: "{0} licked a special rock."
+	}
+
+	ChasmeHead: {
+		// 0: "{0} was devoured by Chasme."
+		// 1: "{0} went down the hatch."
+		// 2: "{0} hit the spot."
+	}
+}
+
+Biomes: {
+	DepthsBiome: {
+		DisplayName: Биом Глубин
+		TownNPCDialogueName: Биом Глубин
+	}
+}
+
+UnderworldSelection: {
+	Random: {
+		// Title: Random
+		// Description: Let nature decide whether the Underworld or Depths is the world core.
+	}
+
+	Underworld: {
+		// Title: Underworld
+		// Description: The lava filled Underworld is guaranteed to be present in your world.
+	}
+
+	Depths: {
+		// Title: Depths
+		// Description: The cold, dark Depths are guaranteed to be present in your world.
+	}
+}
+
+Emotes: {
+	DepthsBiomeEmote: тёмныйбиом
+	ShadowCatEmote: теневаякошка
+	ChasmeEmote: чазм
+}
+
+Achievements: {
+	HeartSmasher: {
+		// Name: Heart Smasher
+		// Description: Defeat Chasme (and her shalestone giant), the unwilling creator of the Depths and the commander of the Geomancers.
+	}
+
+	PickaxeOfPoison: {
+		// Name: Pickaxe of Poison
+		// Description: Craft a Mercury Pickaxe using the most deadly of liquids.
+	}
+
+	MysteriesOfTheDark: {
+		// Name: Mysteries of the Dark
+		// Description: Go deep enough to find The Depths.
+	}
+
+	MercuryAngler: {
+		// Name: Mercury Angler
+		// Description: Cast a line into a pool of quicksilver to find some mercury-resistant marine life.
+	}
+}
+
+// BossChecklist.SpawnInfo.Chasme: Spawn by using a [i:TheDepths/RubyRelic] at a [i:TheDepths/Gemforge] in your world's core. [c/FF0000:Starts Hardmode!]
+InDepths: Mods.TheDepths.InDepths
+OutDepths: Mods.TheDepths.OutDepths
+// GameUI.LayerDepths: Depths
+
+CreditsRollCategory_DepthsTeam: {
+	// 1: The Depths Team
+	// 2: Lion8cake
+	// 3: Snickerbobble
+	// 4: HBDeus
+	// 5: GabeHasWon
+	// 6: Ghasttear1
+	// 7: Syntrin
+	// 8: Darkrious
+	// 9: Larfleeze
+	// 10: Moddingus
+	// 11: Hariq “Hariq53”
+	// 12: Phase II “alpha0010”
+	// 13: Kurtis
+	// 14: Andrey2345
+	// 15: Yee苍棱
+	// 16: Seceip
+	// 17: zynn
+	// 18: Roton
+	// 19: CDT_Maggot
+	// 20: BasicallyIAmFox
+}
+
+MusicDisplay: {
+	// ModName: The Depths
+	// Author: by HBDeus
+	// Depths.DisplayName: The Unsound Deep
+	// DepthsOtherworldly.DisplayName: The Deep Unsound
+	// Chasme.DisplayName: Chasmic to the Rock
+}
+
+Keybinds.GroundSlam.DisplayName: Удар по земле
+
+Configs: {
+	TheDepthsClientConfig: {
+		DisplayName: Конфигурация клиента The Depths
+		Headers.DepthsClientsideConfig: Конфигурация клиента The Depths
+
+		SlateConfig: {
+			Label: Переименовать сланец в аспидий
+			Tooltip: Переименует сланец в аспидий, для вступления в силу следует перезагрузить мод.
+		}
+
+		EnableFog: {
+			Label: Включить глубинный туман
+			Tooltip: Включает интенсивный туман, видимый только в глубинах. Отключите это, если хотите убрать туман.
+		}
+	}
+
+	FargosBoBWConfig: {
+		DisplayName: Fargos Best of Both Worlds Конфигурации в Depths
+		Headers.DrunkSeedRequiresFargosbestofbothworldsmod: Пьяный сид (требуется Fargo's Best of Both Worlds Mod)
+
+		BothCores: {
+			Label: "[i:174][i:TheDepths/ArqueriteOre] Оба ядра"
+			Tooltip: ""
+		}
+	}
+}

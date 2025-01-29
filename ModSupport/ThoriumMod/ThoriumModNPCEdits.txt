@@ -1,0 +1,455 @@
+﻿using MonoMod.Cil;
+using MonoMod.RuntimeDetour;
+using System;
+using System.Collections.Generic;
+using System.Drawing.Printing;
+using System.IO.Pipelines;
+using System.Reflection;
+using Terraria;
+using Terraria.GameContent.Events;
+using Terraria.GameContent.ItemDropRules;
+using Terraria.ID;
+using Terraria.Localization;
+using Terraria.ModLoader;
+using TheDepths.ModSupport.ThoriumMod.Items;
+using TheDepths.Worldgen;
+using ThoriumMod.Core.ItemDropRules.DropConditions;
+using ThoriumMod.Items.Misc;
+
+namespace TheDepths.ModSupport.ThoriumMod
+{
+    [ExtendsFromMod("ThoriumMod"), JITWhenModsEnabled("ThoriumMod")]
+    internal class ThoriumModNPCEdits : GlobalNPC
+    {
+        public override void EditSpawnPool(IDictionary<int, float> pool, NPCSpawnInfo spawnInfo)
+        {
+            SpawnNPC_ThoriumNPC(spawnInfo, 0, out bool blockSpawn);
+            if (blockSpawn)
+            {
+                if (pool.ContainsKey(0))
+                {
+                    pool[0] = 0f;
+                }
+            }
+        }
+
+        private static int SpawnNPC_TryFindingProperGroundTileType(int spawnTileType, int x, int y)
+        {
+            if (!NPC.IsValidSpawningGroundTile(x, y))
+            {
+                for (int i = y + 1; i < y + 30; i++)
+                {
+                    if (NPC.IsValidSpawningGroundTile(x, i))
+                    {
+                        return Main.tile[x, i].TileType;
+                    }
+                }
+            }
+            return spawnTileType;
+        }
+
+        public static float SpawnNPC_ThoriumNPC(NPCSpawnInfo spawnInfo, int npcType, out bool blockSpawn)
+        {
+            blockSpawn = false;
+            int x = spawnInfo.SpawnTileX;
+            int y = spawnInfo.SpawnTileY;
+            Player player = spawnInfo.Player;
+            int spawnTile = spawnInfo.SpawnTileType;
+            int tileType = Main.tile[x, y].TileType; //num56
+            tileType = SpawnNPC_TryFindingProperGroundTileType(tileType, x, y);
+            int wall = Main.tile[x, y - 1].WallType; //num58
+            int num89 = (int)(player.position.X + (float)(player.width / 2)) / 16;
+            int num100 = (int)(player.position.Y + (float)(player.height / 2)) / 16;
+            if (Main.tile[x, y - 2].WallType == 244 || Main.tile[x, y].WallType == 244)
+            {
+                wall = 244;
+            }
+            int maxValue = 65;
+            if (Main.remixWorld && (double)(player.position.Y / 16f) < Main.worldSurface && (player.ZoneCorrupt || player.ZoneCrimson))
+            {
+                maxValue = 25;
+            }
+            //called surface yet gets above the ROCK layer not surface, this includes the dirt layer too
+            bool surface = (double)y <= Main.rockLayer; //num9
+                                                        //true surface and its additional conditions
+            bool surface2 = (double)y <= Main.worldSurface; //num13
+            bool dirtLayer = (double)y >= Main.rockLayer; //num14
+            bool raining = Main.cloudAlpha > 0f; //num17
+            bool oceanBottom = ((x < WorldGen.oceanDistance || x > Main.maxTilesX - WorldGen.oceanDistance) && Main.tileSand[tileType] && (double)y < Main.rockLayer) || (spawnTile == TileID.Sand && WorldGen.oceanDepths(x, y)); //num15
+            bool beach = (double)y <= Main.worldSurface && (x < WorldGen.beachDistance || x > Main.maxTilesX - WorldGen.beachDistance); //num16
+            //int range = 10;
+
+            //spawning, adapted from vanilla SpawnNPC method in NPC.cs
+            /*if (!((player.ZoneDungeon) || (player.ZoneMeteor) || (DD2Event.Ongoing && player.ZoneOldOneArmy) || ((Main.remixWorld || (double)y <= Main.worldSurface) && !Main.dayTime && Main.snowMoon) || ((Main.remixWorld || (double)y <= Main.worldSurface) && !Main.dayTime && Main.pumpkinMoon) || (((double)y <= Main.worldSurface || (Main.remixWorld && (double)y > Main.rockLayer)) && Main.dayTime && Main.eclipse) || (Main.hardMode && spawnTile == TileID.MushroomGrass && spawnInfo.Water)))
+                {
+                    if (Main.hardMode && (double)y > Main.worldSurface && player.RollLuck(Main.tenthAnniversaryWorld ? 25 : 75) == 0) //biome mimic
+                    {
+                        if (Main.rand.NextBool(2) && player.InModBiome(ModContent.GetInstance<ConfectionBiome>()) && !NPC.AnyNPCs(ModContent.NPCType<BigMimicConfection>()))
+                        {
+                            blockVanillaSpawn = true;
+                            if (npcType == ModContent.NPCType<BigMimicConfection>())
+                            {
+                                return 1f;
+                            }
+                        }
+                    }
+                    else if (!((((tileType == TileID.LihzahrdBrick || tileType == TileID.WoodenSpikes) && spawnInfo.Lihzahrd) || (Main.remixWorld && spawnInfo.Lihzahrd)) || (tileType == TileID.JungleGrass && ((!Main.remixWorld && (double)y > (Main.worldSurface + Main.rockLayer) / 2.0) || (Main.remixWorld && ((double)y < Main.rockLayer || Main.rand.NextBool(2)))))))
+                    {
+                        if (Sandstorm.Happening && player.ZoneSandstorm && TileID.Sets.Conversion.Sand[tileType] && NPC.Spawning_SandstoneCheck(x, y)) //confection sandstorm
+                        {
+                            if (!(!NPC.downedBoss1 && !Main.hardMode))
+                            {
+                                if (Main.hardMode && tileType == ModContent.TileType<Tiles.Creamsand>() && Main.rand.NextBool(3))
+                                {
+                                    blockVanillaSpawn = true;
+                                    if (npcType == ModContent.NPCType<SweetGummy>())
+                                    {
+                                        return 1f;
+                                    }
+                                }
+                            }
+                        }
+                        else if (Main.hardMode && tileType == ModContent.TileType<Tiles.Creamsand>() && Main.rand.NextBool(2))
+                        {
+                            blockVanillaSpawn = true;
+                            if (npcType == ModContent.NPCType<SweetGummy>())
+                            {
+                                return 1f;
+                            }
+                        }
+                        else if (!(Main.hardMode && !spawnInfo.Water && surface && (tileType == TileID.Pearlsand || tileType == TileID.Pearlstone || tileType == TileID.HallowedGrass || tileType == TileID.HallowedIce)))
+                        {
+                            if (Main.hardMode && !spawnInfo.Water && surface && (tileType == ModContent.TileType<Tiles.Creamsand>() || tileType == ModContent.TileType<Tiles.Creamstone>() || tileType == ModContent.TileType<Tiles.CreamGrass>() || tileType == ModContent.TileType<Tiles.BlueIce>()))
+                            {
+                                blockVanillaSpawn = true;
+                                if (NPC.downedPlantBoss && (Main.remixWorld || (!Main.dayTime && Main.time < 16200.0)) && surface2 && player.RollLuck(10) == 0 && !NPC.AnyNPCs(ModContent.NPCType<RoyalCherryBug>()))
+                                {
+                                    if (npcType == ModContent.NPCType<RoyalCherryBug>())
+                                    {
+                                        return 1f;
+                                    }
+                                }
+                                else if (!raining || NPC.AnyNPCs(ModContent.NPCType<SherbetSlime>()) || !Main.rand.NextBool(12))
+                                {
+                                    if (!Main.dayTime && Main.rand.NextBool(2))
+                                    {
+                                        if (player.RollLuck(500) == 0)
+                                        {
+                                            if (npcType == ModContent.NPCType<WildWilly>())
+                                            {
+                                                return 1f;
+                                            }
+                                        }
+                                        else
+                                        {
+                                            if (npcType == ModContent.NPCType<Meowzer>())
+                                            {
+                                                return 1f;
+                                            }
+                                        }
+                                    }
+                                    else
+                                    {
+                                        if (!Main.rand.NextBool(10) && (!player.ZoneWaterCandle || !Main.rand.NextBool(10)))
+                                        {
+                                            if (npcType == ModContent.NPCType<Sprinkler>() || npcType == ModContent.NPCType<Sprinkling>())
+                                            {
+                                                return 1f;
+                                            }
+                                        }
+                                        else
+                                        {
+                                            if (npcType == ModContent.NPCType<Rollercookie>())
+                                            {
+                                                return 1f;
+                                            }
+                                        }
+                                    }
+                                }
+                                else
+                                {
+                                    if (npcType == ModContent.NPCType<SherbetSlime>())
+                                    {
+                                        return 1f;
+                                    }
+                                }
+                            }
+                            else if (!spawnInfo.PlayerSafe && Main.hardMode && Main.rand.NextBool(50) && !spawnInfo.Water && dirtLayer && (tileType == ModContent.TileType<Tiles.Creamsand>() || tileType == ModContent.TileType<Tiles.Creamstone>() || tileType == ModContent.TileType<Tiles.CreamGrass>() || tileType == ModContent.TileType<Tiles.BlueIce>()))
+                            {
+                                blockVanillaSpawn = true;
+                                if (npcType == ModContent.NPCType<CrazyCone>())
+                                {
+                                    return 1f;
+                                }
+                            }
+                            else if (!(((tileType == TileID.Crimtane && player.ZoneCrimson) || tileType == TileID.CrimsonGrass || tileType == TileID.FleshIce || tileType == TileID.Crimstone || tileType == TileID.Crimsand || tileType == TileID.CrimsonJungleGrass) || ((tileType == TileID.Demonite && player.ZoneCorrupt) || tileType == TileID.CorruptGrass || tileType == TileID.Ebonstone || tileType == TileID.Ebonsand || tileType == TileID.CorruptIce || tileType == TileID.CorruptJungleGrass)))
+                            {
+                                if (surface2)
+                                {
+                                    bool flag32 = (float)Math.Abs(x - Main.maxTilesX / 2) / (float)(Main.maxTilesX / 2) > 0.33f;
+                                    if (flag32 && NPC.AnyDanger())
+                                    {
+                                        flag32 = false;
+                                    }
+                                    if (!player.ZoneGraveyard && Main.dayTime)
+                                    {
+                                        int num3 = Math.Abs(x - Main.spawnTileX);
+                                        if (!spawnInfo.Water && num3 < Main.maxTilesX / 2 && Main.rand.NextBool(15) && (tileType == ModContent.TileType<Tiles.CreamGrass>() || tileType == ModContent.TileType<Tiles.CreamGrassMowed>()))
+                                        {
+                                            blockVanillaSpawn = true;
+                                            if (!(tileType == TileID.SnowBlock || tileType == TileID.IceBlock))
+                                            {
+                                                if (!NPC.TooWindyForButterflies && !Main.raining && Main.dayTime && Main.rand.NextBool(NPC.butterflyChance) && surface2)
+                                                {
+                                                    if (npcType == ModContent.NPCType<GrumbleBee>())
+                                                    {
+                                                        return 1f;
+                                                    }
+                                                }
+                                                else
+                                                {
+                                                    if (npcType == ModContent.NPCType<ChocolateBunny>())
+                                                    {
+                                                        return 1f;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        else if (!spawnInfo.Water && num3 < Main.maxTilesX / 3 && Main.dayTime && Main.time < 18000.0 && (tileType == ModContent.TileType<Tiles.CreamGrass>() || tileType == ModContent.TileType<Tiles.CreamGrassMowed>()) && Main.rand.NextBool(4) && (double)y <= Main.worldSurface && NPC.CountNPCS(ModContent.NPCType<Birdnana>()) + NPC.CountNPCS(ModContent.NPCType<Pip>()) < 6)
+                                        {
+                                            blockVanillaSpawn = true;
+                                            int num4 = Main.rand.Next(3);
+                                            switch (num4)
+                                            {
+                                                case 0:
+                                                    if (npcType == ModContent.NPCType<Pip>())
+                                                    {
+                                                        return 1f;
+                                                    }
+                                                    break;
+                                                default:
+                                                    if (npcType == ModContent.NPCType<Birdnana>())
+                                                    {
+                                                        return 1f;
+                                                    }
+                                                    break;
+                                            }
+                                        }
+                                        else if (!spawnInfo.Water && num3 < Main.maxTilesX / 3 && Main.rand.NextBool(15) && (tileType == ModContent.TileType<Tiles.CreamGrass>() || tileType == ModContent.TileType<Tiles.CreamGrassMowed>()))
+                                        {
+                                            blockVanillaSpawn = true;
+                                            int num5 = Main.rand.Next(3);
+                                            switch (num5)
+                                            {
+                                                case 0:
+                                                    if (npcType == ModContent.NPCType<Pip>())
+                                                    {
+                                                        return 1f;
+                                                    }
+                                                    break;
+                                                default:
+                                                    if (npcType == ModContent.NPCType<Birdnana>())
+                                                    {
+                                                        return 1f;
+                                                    }
+                                                    break;
+                                            }
+                                        }
+                                    }
+                                    else
+                                    {
+                                        if (!player.ZoneGraveyard && !NPC.TooWindyForButterflies && (tileType == ModContent.TileType<Tiles.CreamGrass>() || tileType == ModContent.TileType<Tiles.CreamGrassMowed>()) && !Main.raining && Main.rand.NextBool(NPC.fireFlyChance) && (double)y <= Main.worldSurface)
+                                        {
+                                            blockVanillaSpawn = true;
+                                            if (npcType == ModContent.NPCType<CherryBug>())
+                                            {
+                                                if (Main.rand.NextBool(NPC.fireFlyMultiple))
+                                                {
+                                                    NPC.NewNPC(NPC.GetSource_NaturalSpawn(), x * 16 + 8 - 16, y * 16, npcType);
+                                                }
+                                                if (Main.rand.NextBool(NPC.fireFlyMultiple))
+                                                {
+                                                    NPC.NewNPC(NPC.GetSource_NaturalSpawn(), x * 16 + 8 + 16, y * 16, npcType);
+                                                }
+                                                if (Main.rand.NextBool(NPC.fireFlyMultiple))
+                                                {
+                                                    NPC.NewNPC(NPC.GetSource_NaturalSpawn(), x * 16 + 8, y * 16 - 16, npcType);
+                                                }
+                                                if (Main.rand.NextBool(NPC.fireFlyMultiple))
+                                                {
+                                                    NPC.NewNPC(NPC.GetSource_NaturalSpawn(), x * 16 + 8, y * 16 + 16, npcType);
+                                                }
+                                                return 1f;
+                                            }
+                                        }
+                                    }
+                                }
+                                else if (!((surface) || (y > Main.maxTilesY - 190)))
+                                {
+                                    if ((tileType == ModContent.TileType<Tiles.Creamsand>() || tileType == ModContent.TileType<Tiles.Creamstone>() || tileType == ModContent.TileType<Tiles.BlueIce>()) && Main.hardMode && !spawnInfo.PlayerSafe && Main.rand.NextBool(8))
+                                    {
+                                        blockVanillaSpawn = true;
+                                        if (npcType == ModContent.NPCType<Iscreamer>())
+                                        {
+                                            return 1f;
+                                        }
+                                    }
+                                    else if ((spawnTile == TileID.SnowBlock || spawnTile == TileID.IceBlock || spawnTile == TileID.BreakableIce || spawnTile == TileID.CorruptIce || spawnTile == TileID.HallowedIce || spawnTile == TileID.FleshIce || spawnTile == ModContent.TileType<Tiles.BlueIce>()) && !spawnInfo.PlayerSafe && Main.hardMode && player.InModBiome(ModContent.GetInstance<ConfectionBiome>()) && Main.rand.NextBool(30))
+                                    {
+                                        //blockSpawn = true; //dont block
+                                        if (npcType == ModContent.NPCType<StripedPigron>())
+                                        {
+                                            return 1f;
+                                        }
+                                    }
+                                    else if (!Main.rand.NextBool(2))
+                                    {
+                                        if (Main.hardMode && (player.InModBiome(ModContent.GetInstance<ConfectionBiome>()) && Main.rand.NextBool(2)))
+                                        {
+                                            if (npcType == ModContent.NPCType<ParfaitSlime>())
+                                            {
+                                                return 1f;
+                                            }
+                                        }
+                                        else
+                                        {
+                                            if (!(player.ZoneJungle))
+                                            {
+                                                if (!(player.ZoneGlowshroom && (spawnTile == TileID.MushroomGrass || spawnTile == TileID.MushroomBlock)))
+                                                {
+                                                    if (Main.hardMode && player.InModBiome(ModContent.GetInstance<ConfectionBiome>()))
+                                                    {
+                                                        blockVanillaSpawn = true;
+                                                        if (Main.rand.NextBool(5))
+                                                        {
+                                                            if (npcType == ModContent.NPCType<FoaminFloat>())
+                                                            {
+                                                                return 1f;
+                                                            }
+                                                        }
+                                                        else if (Main.rand.NextBool(50) && !player.ZoneSnow)
+                                                        {
+                                                            if (npcType == ModContent.NPCType<GummyWyrmHead>())
+                                                            {
+                                                                return 1f;
+                                                            }
+                                                        }
+                                                        else if (Main.rand.NextBool(80))
+                                                        {
+                                                            if (npcType == ModContent.NPCType<IcecreamGal>())
+                                                            {
+                                                                return 1f;
+                                                            }
+                                                        }
+                                                        else
+                                                        {
+                                                            if (npcType == ModContent.NPCType<Prickster>())
+                                                            {
+                                                                return 1f;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }*/
+            
+            if (ModLoader.TryGetMod("ThoriumMod", out Mod Thorium))
+            {
+                if (Main.hardMode && (spawnInfo.Player.ZoneUnderworldHeight && Worldgen.TheDepthsWorldGen.InDepths(spawnInfo.Player) && !Main.remixWorld) || Main.hardMode && (spawnInfo.Player.ZoneUnderworldHeight && !Worldgen.TheDepthsWorldGen.InDepths(spawnInfo.Player) && (spawnInfo.SpawnTileX < Main.maxTilesX * 0.38 + 50.0 || spawnInfo.SpawnTileX > Main.maxTilesX * 0.62) && Main.remixWorld))
+                {
+                    if (Thorium.TryFind("BoneFlayer", out ModNPC BoneFlayer) && npcType == BoneFlayer.Type)
+                    {
+                        blockSpawn = true;
+                    }
+                    else if (Thorium.TryFind("UnderworldPot1", out ModNPC UnderworldPot1) && npcType == UnderworldPot1.Type)
+                    {
+                        blockSpawn = true;
+                    }
+                    else if (Thorium.TryFind("UnderworldPot2", out ModNPC UnderworldPot2) && npcType == UnderworldPot2.Type)
+                    {
+                        blockSpawn = true;
+                    }
+                    else if (Thorium.TryFind("InfernalHound", out ModNPC InfernalHound) && npcType == InfernalHound.Type)
+                    {
+                        blockSpawn = true;
+                    }
+                    else if (Thorium.TryFind("MoltenMortar", out ModNPC MoltenMortar) && npcType == MoltenMortar.Type)
+                    {
+                        blockSpawn = true;
+                    }
+                    else if (Thorium.TryFind("HellBringerMimic", out ModNPC HellBringerMimic) && npcType == HellBringerMimic.Type)
+                    {
+                        blockSpawn = true;
+                    }
+                }
+            }
+            
+            return 0f;
+        }
+
+        public override void ModifyGlobalLoot(GlobalLoot globalLoot)
+        {
+            globalLoot.Add(ItemDropRule.ByCondition(new SoulofFluorite(), ModContent.ItemType<Items.SoulofFluorite>(), 5));
+            globalLoot.Remove(ItemDropRule.ByCondition(new SoulofPlightCondition(), ModContent.ItemType<SoulofPlight>(), 5));
+            globalLoot.Add(ItemDropRule.ByCondition(new SoulofPlightModified(), ModContent.ItemType<SoulofPlight>(), 5));
+        }
+    }
+
+    internal class SoulofFluorite : IItemDropRuleCondition, IProvideItemConditionDescription
+    {
+        bool IItemDropRuleCondition.CanDrop(DropAttemptInfo info)
+        {
+            if (info.IsInSimulation)
+            {
+                return false;
+            }
+            if (info.player.position.Y / 16f > Main.UnderworldLayer && Main.hardMode && TheDepthsWorldGen.isWorldDepths && !TheDepthsWorldGen.DrunkDepthsLeft && !TheDepthsWorldGen.DrunkDepthsRight)
+            {
+                return Conditions.SoulOfWhateverConditionCanDrop(info);
+            }
+            return false;
+        }
+
+        bool IItemDropRuleCondition.CanShowItemDropInUI()
+        {
+            return true;
+        }
+
+        string IProvideItemConditionDescription.GetConditionDescription()
+        {
+            return null;
+        } 
+    }
+
+    internal class SoulofPlightModified : IItemDropRuleCondition, IProvideItemConditionDescription
+    {
+        bool IItemDropRuleCondition.CanDrop(DropAttemptInfo info)
+        {
+            if (info.IsInSimulation)
+            {
+                return false;
+            }
+            if (info.player.position.Y / 16f > Main.UnderworldLayer && Main.hardMode && !TheDepthsWorldGen.isWorldDepths && !TheDepthsWorldGen.DrunkDepthsLeft && !TheDepthsWorldGen.DrunkDepthsRight)
+            {
+                return Conditions.SoulOfWhateverConditionCanDrop(info);
+            }
+            return false;
+        }
+
+        bool IItemDropRuleCondition.CanShowItemDropInUI()
+        {
+            return true;
+        }
+
+        string IProvideItemConditionDescription.GetConditionDescription()
+        {
+            return Language.GetTextValue("Bestiary_ItemDropConditions.LivingFlames");
+        }
+    }
+}

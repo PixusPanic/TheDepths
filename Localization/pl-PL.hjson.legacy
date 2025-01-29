@@ -296,6 +296,11 @@ Mods: {
 				DisplayName: Mała Chasme
 				Description: Mała Chasme broni Cię swoimi dłonmi cienia
 			}
+
+			QuicksilverWetBuff: {
+				// DisplayName: Quicksilver Wet Buff
+				// Description: Mods.TheDepths.Buffs.QuicksilverWetBuff.Description
+			}
 		}
 
 		Items: {
@@ -1906,6 +1911,30 @@ Mods: {
 				DisplayName: Koci grób
 				Tooltip: "'Mimo że nie ma go już z nami, pozostanie w naszej pamięci na wieki'"
 			}
+
+			ThoriumMod: {
+				SoulofFluorite: {
+					// DisplayName: Soul of Fluorite
+					// Tooltip: "'The essence of shaled creatures'"
+				}
+
+				SoulofFluoriteinaBottle: {
+					// DisplayName: Soul of Fluorite in a Bottle
+					// Tooltip: ""
+				}
+			}
+
+			FargoSouls: {
+				NightwoodEnchant: {
+					// DisplayName: Nightwood Enchant
+					// Tooltip: ""
+				}
+
+				QuartzEnchant: {
+					// DisplayName: Quartz Enchant
+					// Tooltip: ""
+				}
+			}
 		}
 
 		NPCs: {
@@ -2008,6 +2037,7 @@ Mods: {
 			QuicksilverTears.DisplayName: Rtęciowe łzy
 			EmeraldEnergy.DisplayName: Szmaragdowa energia
 			FelineTombstone.DisplayName: Koci grób
+			// MercuryEnchantExplosion.DisplayName: Mercury Enchant Explosion
 		}
 
 		Biomes: {

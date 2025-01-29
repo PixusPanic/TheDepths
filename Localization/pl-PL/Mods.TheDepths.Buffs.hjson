@@ -1,0 +1,77 @@
+CrystalSkin: {
+	DisplayName: Kryształowa skóra
+	Description: Odporność na rtęć
+}
+
+FlaskofMercury: {
+	DisplayName: Nasycenie broni: rtęć
+	Description: Ataki w zwarciu gotują wrogów rtęcią
+}
+
+FreezingWater: {
+	DisplayName: Zamarzająca woda
+	Description: Osłabione zdolności fizyczne
+}
+
+LivingShadowSummonBuff: {
+	DisplayName: Sylwetka
+	Description: Podobizna Ciebie broni Cię
+}
+
+MercuryBoiling: {
+	DisplayName: Zatrucie Rtęcią
+	Description: Powolna utrata życia
+}
+
+MercuryFooting: {
+	DisplayName: Rtęciowe buty
+	Description: 15% zwiększona prędkosć poruszania się
+}
+
+MercuryPoisoning: {
+	DisplayName: Promieniowanie rtęci
+	Description: Utrata życia i zmniejszona prędkość poruszania się
+}
+
+RelicsCurse: {
+	DisplayName: Klątwa reliktu
+	Description: Nie możesz użyć więcej reliktów
+}
+
+SilverSphereBuff: {
+	DisplayName: Srebrna kula
+	Description: Cztery srebrne kule orbitują wokół Ciebie
+}
+
+ShadePetBuff: {
+	DisplayName: Cień
+	Description: '''"Cień lata wokół Ciebie"'''
+}
+
+ShadowCatBuff: {
+	DisplayName: Cień kota
+	Description: Czy to cień kota, czy kot cienia?
+}
+
+PurpleflameJellyBuff: {
+	DisplayName: Fioletowa ognista meduza
+	Description: Unikatowy ale rzadki i niegroźny gatunek Meduzy, który żyje w rtęci
+}
+
+MercuryContagion: {
+	DisplayName: Zakażenie rtęcią
+	Description: Gdy wrogowie zbliżą się do siebie, ich zaraza się roznosi
+}
+
+PhantomFirecartBuff.DisplayName: Wózek górniczy
+OnyxMinecartBuff.DisplayName: Wózek górniczy
+
+NightmareHorseBuff: {
+	DisplayName: Koszmarny koń
+	Description: Upiorny łupkowy koń stworzony przez Chasme
+}
+
+BuffofaThousandYears: {
+	DisplayName: Mała Chasme
+	Description: Mała Chasme broni Cię swoimi dłonmi cienia
+}

@@ -1,0 +1,11 @@
+Items: {
+	SoulofFluorite: {
+		// DisplayName: Soul of Fluorite
+		// Tooltip: "'The essence of toxic creatures'"
+	}
+
+	SoulofFluoriteinaBottle: {
+		// DisplayName: Soul of Fluorite in a Bottle
+		// Tooltip: ""
+	}
+}

@@ -1,0 +1,77 @@
+CrystalSkin: {
+	DisplayName: Кристальная кожа
+	Description: Иммунитет к ртути
+}
+
+FlaskofMercury: {
+	DisplayName: Насыщение оружия: Ртуть
+	Description: Ближние атаки обжигают ваши цели ртутью
+}
+
+FreezingWater: {
+	DisplayName: Замороженная вода
+	Description: Движение полностью отключено
+}
+
+LivingShadowSummonBuff: {
+	DisplayName: Силуэт
+	Description: За вас будет сражаться фигура, похожая на вас
+}
+
+MercuryBoiling: {
+	DisplayName: Отравление ртутью
+	Description: Медленное снижение здоровья
+}
+
+MercuryFooting: {
+	DisplayName: Ртутная ходьба
+	Description: Скорость движения увеличена на 15%
+}
+
+MercuryPoisoning: {
+	DisplayName: Ртутная радиация
+	Description: Потеря здоровья и сниженная скорость движения
+}
+
+RelicsCurse: {
+	DisplayName: Проклятье реликвий
+	Description: Невозможно использовать больше реликвий
+}
+
+SilverSphereBuff: {
+	DisplayName: Серебряная сфера
+	Description: Вокруг вас вращаются четыре серебряные сферы
+}
+
+ShadePetBuff: {
+	DisplayName: Тень-питомец
+	Description: '''"Рядом с тобой плавает Тень"'''
+}
+
+ShadowCatBuff: {
+	DisplayName: Теневая кошка
+	Description: Это кошка из тени или тень кошки?
+}
+
+PurpleflameJellyBuff: {
+	DisplayName: Медуза фиолетового пламени
+	Description: Уникальный, но редкий и пассивный вид медуз, обитающий в ртути
+}
+
+MercuryContagion: {
+	DisplayName: Ртутное заражение
+	Description: Когда враги сталкиваются, их болезнь распространяется
+}
+
+PhantomFirecartBuff.DisplayName: Вагонетка
+OnyxMinecartBuff.DisplayName: Вагонетка
+
+NightmareHorseBuff: {
+	DisplayName: Кошмарная лошадь
+	Description: Ужасно выглядящая лошадь из сланца, созданная самой Чазм.
+}
+
+BuffofaThousandYears: {
+	DisplayName: Чазмини
+	Description: Чазмини использует свои руки, чтобы сражаться за вас
+}

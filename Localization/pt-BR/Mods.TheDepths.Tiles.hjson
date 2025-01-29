@@ -1,0 +1,106 @@
+ArqueriteOre.MapEntry: Minério de Arquerite
+BlackTorch.MapEntry: Tocha
+CoreBuilderTile.MapEntry: Núcleo Construtor
+// DepthsBanners.MapEntry: Banner
+DepthsMusicBox.MapEntry: Caixa de Música
+DepthsPot.MapEntry: Pote
+EmberUpdated.MapEntry: Brasa
+Gemforge.MapEntry: Forja Gemática
+GemlockTile.MapEntry: Azulejo Gemlock
+GeoTorch.MapEntry: Tocha
+LargeCrystal.MapEntry: Cristal Largo
+OnyxShalestone.MapEntry: Ônix
+Quartz.MapEntry: Quartzo
+QuartzChair.MapEntry: Cadeira
+QuartzDoorClosed.MapEntry: Porta
+QuartzDoorOpen.MapEntry: Porta
+QuartzTable.MapEntry: Mesa
+QuartzWorkbench.MapEntry: Bancada de Trabalho
+QuicksilverDropletSource.MapEntry: Mercúrio Gotejando
+ShadowShrub.MapEntry: Arbusto das Sombras
+// Shalestone.MapEntry: Shalestone
+ShalestoneAmethyst.MapEntry: Ametista
+ShalestoneDiamond.MapEntry: Diamante
+ShalestoneEmerald.MapEntry: Esmeralda
+ShalestoneRuby.MapEntry: Rubi
+ShalestoneSapphire.MapEntry: Safira
+ShalestoneTopaz.MapEntry: Topázio
+PetrifiedSapling.MapEntry: Muda Petrificada
+NightSapling.MapEntry: Muda Paunoite
+QuicksilverSensor.MapEntry: Sensor Líqudio (Mercúrio)
+OtherPortal.MapEntry: Outro Portal
+NightwoodBath.MapEntry: Banheira de Paunoite
+NightwoodBed.MapEntry: Cama de Paunoite
+NightwoodBookcase.MapEntry: Estante de Livros de Paunoite
+NightwoodCandelabra.MapEntry: Candelabro de Paunoite
+NightwoodCandle.MapEntry: Vela de Paunoite
+NightwoodChair.MapEntry: Cadeira de Paunoite
+NightwoodChandelier.MapEntry: Lustre de Paunoite
+NightwoodChest.MapEntry: Baú de Paunoite
+NightwoodClock.MapEntry: Relógio de Paunoite
+// NightwoodDoorClosed.MapEntry: Door
+NightwoodDoorOpen.MapEntry: Porta de Paunoite
+NightwoodDresser.MapEntry: Guarda-Roupa de Paunoite
+NightwoodLamp.MapEntry: Lâmpada de Paunoite
+NightwoodLantern.MapEntry: Lanterna de Paunoite
+NightwoodPiano.MapEntry: Piano de Paunoite
+NightwoodSink.MapEntry: Pia de Paunoite
+NightwoodSofa.MapEntry: Sofá de Paunoite
+NightwoodTable.MapEntry: Mesa de Paunoite
+NightwoodToilet.MapEntry: Porcelana de Paunoite
+NightwoodWorkbench.MapEntry: Bancada de Trabalho de Paunoite
+QuartzToilet.MapEntry: Porcelana de Quartzo
+QuartzSofa.MapEntry: Sofá de Quartzo
+QuartzSink.MapEntry: Pia de Quartzo
+QuartzPiano.MapEntry: Piano de Quartzo
+QuartzLantern.MapEntry: Lanterna de Quartzo
+QuartzLamp.MapEntry: Lâmpada de Quartzo
+QuartzDresser.MapEntry: Guarda-Roupa de Quartzo
+QuartzClock.MapEntry: Relógio de Quartzo
+QuartzChest.MapEntry: Baú de Quartzo
+QuartzChandelier.MapEntry: Lustre de Quartzo
+QuartzCandle.MapEntry: Vela de Quartzo
+QuartzCandelabra.MapEntry: Candelabro de Quartzo
+QuartzBookcase.MapEntry: Estante de Livros de Quartzo
+QuartzBed.MapEntry: Cama de Quartzo
+QuartzBath.MapEntry: Banheira de Quartzo
+// DepthsVanityBanners.MapEntry: Banner
+DepthsOtherworldlyMusicBox.MapEntry: Caixa de Música
+AltarOfGems.MapEntry: Altar de Gemas
+ForTheSakeOfMakingGadgets.MapEntry: Para fazer Gadgets
+ImPurrSonation.MapEntry: Estou ronronando
+Mercury.MapEntry: Mercúrio
+MusiciansBestFriend.MapEntry: Melhor Amigo dos Músicos
+ChaosCat.MapEntry: Gato do Caos
+DONOTDRINK.MapEntry: NÃO BEBA
+WaterGeyser.MapEntry: Gêiser de Água
+PlacedGems.MapEntry: Gemas Colocadas
+PlacedOnyx.MapEntry: Ônix posicionada
+OnyxStone.MapEntry: Pedra de Ônix
+OnyxGemtree.MapEntry: Árvore de Gemas Ônix
+PetrifiedTree.MapEntry: Árvore Petrificada
+TheUnknownDepthsBelow.MapEntry: As Profundezas Desconhecidas Abaixo
+NightwoodTree.MapEntry: Árvore de Paunoite
+NightwoodTrappedChest.MapEntry: Baú de Paunoite
+QuartzTrappedChest.MapEntry: Baú de Quartzo
+// HangingShadowShrub.MapEntry: Hanging Shadow Shrub
+PetrifiedWoodBath.MapEntry: Banheira de Madeira Petrificada
+PetrifiedWoodBookcase.MapEntry: Estante de Livros de Madeira Petrificada
+PetrifiedWoodCandelabra.MapEntry: Candelabro de Madeira Petrificada
+PetrifiedWoodCandle.MapEntry: Vela de Madeira Petrificada
+PetrifiedWoodChair.MapEntry: Cadeira de Madeira Petrificada
+PetrifiedWoodChandelier.MapEntry: Lustre de Madeira Petrificada
+PetrifiedWoodChest.MapEntry: Baú de Madeira Petrificada
+PetrifiedWoodClock.MapEntry: Relógio de Madeira Petrificada
+PetrifiedWoodDresser.MapEntry: Guarda-Roupa de Madeira Petrificada
+PetrifiedWoodLamp.MapEntry: Lâmpada de Madeira Petrificada
+PetrifiedWoodLantern.MapEntry: Lanterna de Madeira Petrificada
+PetrifiedWoodBedShaleSheetsAreImpossible.MapEntry: Cama de Madeira Petrificada
+PetrifiedWoodPiano.MapEntry: Piano de Madeira Petrificada
+PetrifiedWoodSink.MapEntry: Pia de Madeira Petrificada
+PetrifiedWoodSofa.MapEntry: Sofá de Madeira Petrificada
+PetrifiedWoodTable.MapEntry: Mesa de Madeira Petrificada
+PetrifiedWoodToilet.MapEntry: Porcelana de Madeira Petrificada
+PetrifiedWoodTrappedChest.MapEntry: Baú-Armadilha de Madeira Petrificada
+PetrifiedWoodWorkbench.MapEntry: Bancada de Trabalho de Madeira Petrificada
+FelineTombstone.MapEntry: Lápide de gato

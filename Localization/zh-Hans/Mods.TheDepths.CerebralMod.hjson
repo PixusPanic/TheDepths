@@ -1,0 +1,36 @@
+Items: {
+	MercurySpikes: {
+		// DisplayName: Mercury Spikes
+		// Tooltip: ""
+	}
+
+	Toxshot: {
+		// DisplayName: Toxshot
+		// Tooltip: Places a slow but powerful projectile firing turret
+	}
+
+	WaterGeyserSentry: {
+		// DisplayName: Water Geyser Sentry
+		// Tooltip: Places a geyser that emits frigid water upwards
+	}
+
+	GeoTwirler: {
+		// DisplayName: Geo Twirler
+		// Tooltip: ""
+	}
+
+	Poisawblade: {
+		// DisplayName: Poisawblade
+		// Tooltip: ""
+	}
+}
+
+Projectiles: {
+	// MercurySpikes.DisplayName: Mercury Spikes
+	// Toxshot.DisplayName: Toxshot
+	// ToxshotProj.DisplayName: Toxshot
+	// WaterGeyserSentry.DisplayName: Water Geyser
+	// WaterGeyserSentryProj.DisplayName: Water Geyser
+	// GeoTwirler.DisplayName: Geo Twirler
+	// Poisawblade.DisplayName: Poisawblade
+}

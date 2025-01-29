@@ -1,0 +1,106 @@
+ArqueriteOre.MapEntry: Mineral de Arquerita
+BlackTorch.MapEntry: Antorcha
+CoreBuilderTile.MapEntry: Constructor del Nucleo
+// DepthsBanners.MapEntry: Banner
+DepthsMusicBox.MapEntry: Caja Musical
+DepthsPot.MapEntry: Maceta
+EmberUpdated.MapEntry: Ascua
+Gemforge.MapEntry: ForjaGemas
+GemlockTile.MapEntry: Baldoza de Gema
+GeoTorch.MapEntry: Antorcha
+LargeCrystal.MapEntry: Cristal Grande
+OnyxShalestone.MapEntry: Onyx
+Quartz.MapEntry: Cuarzo
+QuartzChair.MapEntry: Silla
+QuartzDoorClosed.MapEntry: Puerta
+QuartzDoorOpen.MapEntry: Puerta
+QuartzTable.MapEntry: Mesa
+QuartzWorkbench.MapEntry: Mesa de Trabajo
+QuicksilverDropletSource.MapEntry: Mercurio goteante
+ShadowShrub.MapEntry: Arbusto Sombrío
+// Shalestone.MapEntry: Shalestone
+ShalestoneAmethyst.MapEntry: Amatista
+ShalestoneDiamond.MapEntry: Diamante
+ShalestoneEmerald.MapEntry: Esmeralda
+ShalestoneRuby.MapEntry: Ruby
+ShalestoneSapphire.MapEntry: Safiro
+ShalestoneTopaz.MapEntry: Topaz
+PetrifiedSapling.MapEntry: Pimpollo Petrificado
+NightSapling.MapEntry: Pimpollo Nocturno
+QuicksilverSensor.MapEntry: Sensor de Liquidos (Mercurio)
+OtherPortal.MapEntry: Other Portal
+NightwoodBath.MapEntry: Bañera de Madera Nocturna
+NightwoodBed.MapEntry: Cama de Madera Nocturna
+NightwoodBookcase.MapEntry: Libreria de Madera Nocturna
+NightwoodCandelabra.MapEntry: Candelero de Madera Nocturna
+NightwoodCandle.MapEntry: Vela de Madera Nocurna
+NightwoodChair.MapEntry: Silla de Madera Nocturna
+NightwoodChandelier.MapEntry: Candelabro de Madera Nocturna
+NightwoodChest.MapEntry: Cofre de Madera Nocturna
+NightwoodClock.MapEntry: Reloj de Madera Nocturna
+// NightwoodDoorClosed.MapEntry: Door
+NightwoodDoorOpen.MapEntry: Puerta de Madera Nocturna
+NightwoodDresser.MapEntry: Vestidor de Madera Nocuturna
+NightwoodLamp.MapEntry: Lampara de Madera Nocturna
+NightwoodLantern.MapEntry: Linterna de Madera Nocturna
+NightwoodPiano.MapEntry: Piano de Madera Nocturna
+NightwoodSink.MapEntry: Lavabo de Madera Nocturna
+NightwoodSofa.MapEntry: Sofa de Madera Nocturna
+NightwoodTable.MapEntry: Mesa de Madera Nocturna
+NightwoodToilet.MapEntry: Hinodoro de Madera Nocturna
+NightwoodWorkbench.MapEntry: Mesa de Trabajo de Madera Nocturna
+QuartzToilet.MapEntry: Hinodoro de Cuarzo
+QuartzSofa.MapEntry: Sofa de Cuarzo
+QuartzSink.MapEntry: Lavabo de Cuarzo
+QuartzPiano.MapEntry: Piano de Cuarzo
+QuartzLantern.MapEntry: Linterna de Cuarzo
+QuartzLamp.MapEntry: Lampara de Cuarzo
+QuartzDresser.MapEntry: Vestidor de Cuarzo
+QuartzClock.MapEntry: Reloj de Cuarzo
+QuartzChest.MapEntry: Cofre de Cuarzo
+QuartzChandelier.MapEntry: Candelabro de Cuarzo
+QuartzCandle.MapEntry: Vela de Cuarzo
+QuartzCandelabra.MapEntry: Candelero de Cuarzo
+QuartzBookcase.MapEntry: Libreria de Cuarzo
+QuartzBed.MapEntry: Cama de Cuarzo
+QuartzBath.MapEntry: Bañera de Cuarzo
+// DepthsVanityBanners.MapEntry: Banner
+DepthsOtherworldlyMusicBox.MapEntry: Caja Musical
+AltarOfGems.MapEntry: Altar de Gemas
+ForTheSakeOfMakingGadgets.MapEntry: Por el bien de hacer Artilugios
+ImPurrSonation.MapEntry: Soy el Señor Purr
+Mercury.MapEntry: Mercurio
+MusiciansBestFriend.MapEntry: El Mejor Amigo de los Musicos
+ChaosCat.MapEntry: Gato de Caos
+DONOTDRINK.MapEntry: NO BEBER
+WaterGeyser.MapEntry: Geyser de Agua
+PlacedGems.MapEntry: Gemas Colocadas
+PlacedOnyx.MapEntry: Onyx Colocado
+OnyxStone.MapEntry: Piedra Onyx
+OnyxGemtree.MapEntry: Arbol de Gema Onyx
+PetrifiedTree.MapEntry: Arbol Petrificado
+TheUnknownDepthsBelow.MapEntry: Las Desconocidas Profundidades Inferiores
+NightwoodTree.MapEntry: Arbol de Madera Nocturna
+NightwoodTrappedChest.MapEntry: Cofre de Madera Nocturna
+QuartzTrappedChest.MapEntry: Cofre de Cuarzo
+// HangingShadowShrub.MapEntry: Hanging Shadow Shrub
+PetrifiedWoodBath.MapEntry: Bañera de Madera Petrificada
+PetrifiedWoodBookcase.MapEntry: Libreria de Madera Petrificada
+PetrifiedWoodCandelabra.MapEntry: Candelero de Madera Petrificada
+PetrifiedWoodCandle.MapEntry: Vela de Madera Petrificada
+PetrifiedWoodChair.MapEntry: Silla de Madera Petrificada
+PetrifiedWoodChandelier.MapEntry: Candelabro de Madera Petrificada
+PetrifiedWoodChest.MapEntry: Cofre de Madera Petrificada
+PetrifiedWoodClock.MapEntry: Reloj de Madera Petrificada
+PetrifiedWoodDresser.MapEntry: Vestidor de Madera Petrificada
+PetrifiedWoodLamp.MapEntry: Lampara de Madera Petrificada
+PetrifiedWoodLantern.MapEntry: Linterna de Madera Petrificada
+PetrifiedWoodBedShaleSheetsAreImpossible.MapEntry: Cama de Madera Petrificada
+PetrifiedWoodPiano.MapEntry: Piano de Madera Petrificada
+PetrifiedWoodSink.MapEntry: Lavabo de Madera Petrificada
+PetrifiedWoodSofa.MapEntry: Sofa de Madera Petrificada
+PetrifiedWoodTable.MapEntry: Mesa de Madera Petrificada
+PetrifiedWoodToilet.MapEntry: Hinodoro de Madera Petrificada
+PetrifiedWoodTrappedChest.MapEntry: Cofre Trampa de Madera Petrificada
+PetrifiedWoodWorkbench.MapEntry: Mesa de Trabajo de Madera Petrificada
+FelineTombstone.MapEntry: Lapida

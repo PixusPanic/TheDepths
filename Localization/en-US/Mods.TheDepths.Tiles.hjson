@@ -1,0 +1,106 @@
+ArqueriteOre.MapEntry: Arquerite Ore
+BlackTorch.MapEntry: Torch
+CoreBuilderTile.MapEntry: Core Builder
+DepthsBanners.MapEntry: Banner
+DepthsMusicBox.MapEntry: Music Box
+DepthsPot.MapEntry: Pot
+EmberUpdated.MapEntry: Ember
+Gemforge.MapEntry: Gemforge
+GemlockTile.MapEntry: Gemlock Tile
+GeoTorch.MapEntry: Torch
+LargeCrystal.MapEntry: Large Crystal
+OnyxShalestone.MapEntry: Onyx
+Quartz.MapEntry: Quartz
+QuartzChair.MapEntry: Chair
+QuartzDoorClosed.MapEntry: Door
+QuartzDoorOpen.MapEntry: Door
+QuartzTable.MapEntry: Table
+QuartzWorkbench.MapEntry: Workbench
+QuicksilverDropletSource.MapEntry: Dripping Quicksilver
+ShadowShrub.MapEntry: Shadow Shrub
+Shalestone.MapEntry: Shalestone
+ShalestoneAmethyst.MapEntry: Amethyst
+ShalestoneDiamond.MapEntry: Diamond
+ShalestoneEmerald.MapEntry: Emerald
+ShalestoneRuby.MapEntry: Ruby
+ShalestoneSapphire.MapEntry: Sapphire
+ShalestoneTopaz.MapEntry: Topaz
+PetrifiedSapling.MapEntry: Sapling
+NightSapling.MapEntry: Sapling
+QuicksilverSensor.MapEntry: Liquid Sensor (Quicksilver)
+OtherPortal.MapEntry: Painting
+NightwoodBath.MapEntry: Bath
+NightwoodBed.MapEntry: Bed
+NightwoodBookcase.MapEntry: Bookcase
+NightwoodCandelabra.MapEntry: Candelabra
+NightwoodCandle.MapEntry: Candle
+NightwoodChair.MapEntry: Chair
+NightwoodChandelier.MapEntry: Chandelier
+NightwoodChest.MapEntry: Chest
+NightwoodClock.MapEntry: Clock
+NightwoodDoorClosed.MapEntry: Door
+NightwoodDoorOpen.MapEntry: Door
+NightwoodDresser.MapEntry: Dresser
+NightwoodLamp.MapEntry: Lamp
+NightwoodLantern.MapEntry: Lantern
+NightwoodPiano.MapEntry: Piano
+NightwoodSink.MapEntry: Sink
+NightwoodSofa.MapEntry: Sofa
+NightwoodTable.MapEntry: Table
+NightwoodToilet.MapEntry: Toilet
+NightwoodWorkbench.MapEntry: Workbench
+QuartzToilet.MapEntry: Toilet
+QuartzSofa.MapEntry: Sofa
+QuartzSink.MapEntry: Sink
+QuartzPiano.MapEntry: Piano
+QuartzLantern.MapEntry: Lantern
+QuartzLamp.MapEntry: Lamp
+QuartzDresser.MapEntry: Dresser
+QuartzClock.MapEntry: Clock
+QuartzChest.MapEntry: Chest
+QuartzChandelier.MapEntry: Chandelier
+QuartzCandle.MapEntry: Candle
+QuartzCandelabra.MapEntry: Candelabra
+QuartzBookcase.MapEntry: Bookcase
+QuartzBed.MapEntry: Bed
+QuartzBath.MapEntry: Bath
+DepthsVanityBanners.MapEntry: Banner
+DepthsOtherworldlyMusicBox.MapEntry: Music Box
+AltarOfGems.MapEntry: Painting
+ForTheSakeOfMakingGadgets.MapEntry: Painting
+ImPurrSonation.MapEntry: Painting
+Mercury.MapEntry: Painting
+MusiciansBestFriend.MapEntry: Painting
+ChaosCat.MapEntry: Painting
+DONOTDRINK.MapEntry: Painting
+WaterGeyser.MapEntry: Water Geyser
+PlacedGems.MapEntry: Geode
+PlacedOnyx.MapEntry: Onyx
+OnyxStone.MapEntry: Onyx
+OnyxGemtree.MapEntry: Onyx Gemtree
+PetrifiedTree.MapEntry: Petrified Tree
+TheUnknownDepthsBelow.MapEntry: Painting
+NightwoodTree.MapEntry: Nightwood Tree
+NightwoodTrappedChest.MapEntry: Chest
+QuartzTrappedChest.MapEntry: Chest
+HangingShadowShrub.MapEntry: Hanging Shadow Shrub
+PetrifiedWoodBath.MapEntry: Bath
+PetrifiedWoodBookcase.MapEntry: Bookcase
+PetrifiedWoodCandelabra.MapEntry: Candelabra
+PetrifiedWoodCandle.MapEntry: Candle
+PetrifiedWoodChair.MapEntry: Chair
+PetrifiedWoodChandelier.MapEntry: Chandelier
+PetrifiedWoodChest.MapEntry: Chest
+PetrifiedWoodClock.MapEntry: Clock
+PetrifiedWoodDresser.MapEntry: Dresser
+PetrifiedWoodLamp.MapEntry: Lamp
+PetrifiedWoodLantern.MapEntry: Lantern
+PetrifiedWoodBedShaleSheetsAreImpossible.MapEntry: Bed
+PetrifiedWoodPiano.MapEntry: Piano
+PetrifiedWoodSink.MapEntry: Sink
+PetrifiedWoodSofa.MapEntry: Sofa
+PetrifiedWoodTable.MapEntry: Table
+PetrifiedWoodToilet.MapEntry: Toilet
+PetrifiedWoodTrappedChest.MapEntry: Chest
+PetrifiedWoodWorkbench.MapEntry: Workbench
+FelineTombstone.MapEntry: Tombstone

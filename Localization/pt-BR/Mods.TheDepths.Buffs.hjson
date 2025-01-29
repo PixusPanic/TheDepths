@@ -1,0 +1,77 @@
+CrystalSkin: {
+	DisplayName: Pele de Cristal
+	Description: Imune a Mercúrio
+}
+
+FlaskofMercury: {
+	DisplayName: Imbuir Arma: Mercúrio
+	Description: Ataques corpo a corpo fervem inimigos com Mercúrio
+}
+
+FreezingWater: {
+	DisplayName: Congelando Água
+	Description: Movimento foi completamente desativado
+}
+
+LivingShadowSummonBuff: {
+	DisplayName: Silhueta
+	Description: Uma figura similar a você irá lutar por você.
+}
+
+MercuryBoiling: {
+	DisplayName: Envenenamento por Mercúrio
+	Description: Lentamente perdendo vida
+}
+
+MercuryFooting: {
+	DisplayName: Passos de Mercúrio
+	Description: Aumento de 15% em velocidade de movimento
+}
+
+MercuryPoisoning: {
+	DisplayName: Radiação de Mercúrio
+	Description: Perdendo vida e movimento reduzido
+}
+
+RelicsCurse: {
+	DisplayName: Maldição da Relíquia
+	Description: Incapaz de usar mais relíquias
+}
+
+SilverSphereBuff: {
+	DisplayName: Esfera Prateada
+	Description: Quatro esferas de prata orbitam você
+}
+
+ShadePetBuff: {
+	DisplayName: Pet Sombra
+	Description: '''"Uma sombra está flutuando ao seu redor!"'''
+}
+
+ShadowCatBuff: {
+	DisplayName: Gato Sombra
+	Description: Seria isso a sombra de um gato, ou um gato sombra?
+}
+
+PurpleflameJellyBuff: {
+	DisplayName: Água-Viva Chama-Roxa
+	Description: Uma rara e única espécie de águas vivas que são pacíficas e vivem no mercúrio
+}
+
+MercuryContagion: {
+	DisplayName: Contágio de Mercúrio
+	Description: Quando inimigos colidem, a sua doença se espalha
+}
+
+PhantomFirecartBuff.DisplayName: Carrinho das Minas
+OnyxMinecartBuff.DisplayName: Carrinho de Minerador
+
+NightmareHorseBuff: {
+	DisplayName: Cavalo do Pesadelo
+	Description: Um cavalo espectral de xisto feito pelo própia Chasme
+}
+
+BuffofaThousandYears: {
+	DisplayName: Chasmini
+	Description: Chasmini usará suas mãos para lutar por você
+}

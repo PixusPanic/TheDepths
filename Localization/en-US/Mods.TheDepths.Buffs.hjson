@@ -1,0 +1,77 @@
+CrystalSkin: {
+	DisplayName: Crystal Skin
+	Description: Immune to Quicksilver
+}
+
+FlaskofMercury: {
+	DisplayName: Weapon Imbue: Mercury
+	Description: Melee attacks boil enemies with mercury
+}
+
+FreezingWater: {
+	DisplayName: Freezing Water
+	Description: Movement has been completely disabled
+}
+
+LivingShadowSummonBuff: {
+	DisplayName: Silhouette Minion
+	Description: A shadow of yourself will fight for you
+}
+
+MercuryBoiling: {
+	DisplayName: Mercury Poisoning
+	Description: Slowly losing life
+}
+
+MercuryFooting: {
+	DisplayName: Mercury Footing
+	Description: 15% increased movement speed
+}
+
+MercuryPoisoning: {
+	DisplayName: Mercury Radiation
+	Description: Losing life and slowed movement
+}
+
+RelicsCurse: {
+	DisplayName: Relic's Curse
+	Description: Unable to use any additional relics
+}
+
+SilverSphereBuff: {
+	DisplayName: Silver Sphere
+	Description: Four silver spheres are orbiting around you
+}
+
+ShadePetBuff: {
+	DisplayName: Lonely Shade
+	Description: Looks like this Shade wants to play Cheese and Crackers with you.
+}
+
+ShadowCatBuff: {
+	DisplayName: Shadow Cat
+	Description: Is it a the shadow of a cat, or a cat's shadow?
+}
+
+PurpleflameJellyBuff: {
+	DisplayName: Purpleflame Jelly
+	Description: A unique but rare and passive species of jellyfish that live in quicksilver
+}
+
+MercuryContagion: {
+	DisplayName: Mercury Contagion
+	Description: When enemies collide, their sickness will spread
+}
+
+PhantomFirecartBuff.DisplayName: Minecart
+OnyxMinecartBuff.DisplayName: Minecart
+
+NightmareHorseBuff: {
+	DisplayName: Nightmare Horse
+	Description: A ghastly looking shalestone horse constructed by Chasme herself
+}
+
+BuffofaThousandYears: {
+	DisplayName: Chasmini
+	Description: Chasmini will use her hands to fight for you
+}

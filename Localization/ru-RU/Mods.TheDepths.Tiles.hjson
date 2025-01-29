@@ -1,0 +1,106 @@
+ArqueriteOre.MapEntry: Аркьюрит
+BlackTorch.MapEntry: Факел
+CoreBuilderTile.MapEntry: Строитель Ядра
+// DepthsBanners.MapEntry: Banner
+DepthsMusicBox.MapEntry: Музыкальная шкатулка
+DepthsPot.MapEntry: Горшок
+EmberUpdated.MapEntry: Уголёк
+Gemforge.MapEntry: Самоцветная кузня
+GemlockTile.MapEntry: Плитка самоцветного замка
+GeoTorch.MapEntry: Факел
+LargeCrystal.MapEntry: Большой кристалл
+OnyxShalestone.MapEntry: Оникс
+Quartz.MapEntry: Кварц
+QuartzChair.MapEntry: Стул
+QuartzDoorClosed.MapEntry: Дверь
+QuartzDoorOpen.MapEntry: Дверь
+QuartzTable.MapEntry: Стол
+QuartzWorkbench.MapEntry: Верстак
+QuicksilverDropletSource.MapEntry: Капающая ртуть
+ShadowShrub.MapEntry: Теневой росток
+// Shalestone.MapEntry: Shalestone
+ShalestoneAmethyst.MapEntry: Аметист
+ShalestoneDiamond.MapEntry: Алмаз
+ShalestoneEmerald.MapEntry: Изумруд
+ShalestoneRuby.MapEntry: Рубин
+ShalestoneSapphire.MapEntry: Сапфир
+ShalestoneTopaz.MapEntry: Топаз
+PetrifiedSapling.MapEntry: Окаменевший саженец
+NightSapling.MapEntry: Ночной саженец
+QuicksilverSensor.MapEntry: Датчик жидкости (Ртуть)
+OtherPortal.MapEntry: Другой портал
+NightwoodBath.MapEntry: Ванна из ночной древесины
+NightwoodBed.MapEntry: Кровать из ночной древесины
+NightwoodBookcase.MapEntry: Книжный шкаф из ночной древесины
+NightwoodCandelabra.MapEntry: Канделябр из ночной древесины
+NightwoodCandle.MapEntry: Свеча из ночной древесины
+NightwoodChair.MapEntry: Стул из ночной древесины
+NightwoodChandelier.MapEntry: Люстра из ночной древесины
+NightwoodChest.MapEntry: Сундук из ночной древесины
+NightwoodClock.MapEntry: Часы из ночной древесины
+// NightwoodDoorClosed.MapEntry: Door
+NightwoodDoorOpen.MapEntry: Дверь из ночной древесины
+NightwoodDresser.MapEntry: Комод из ночной древесины
+NightwoodLamp.MapEntry: Лампа из ночной древесины
+NightwoodLantern.MapEntry: Фонарь из ночной древесины
+NightwoodPiano.MapEntry: Пианино из ночной древесины
+NightwoodSink.MapEntry: Раковина из ночной древесины
+NightwoodSofa.MapEntry: Диван из ночной древесины
+NightwoodTable.MapEntry: Стол из ночной древесины
+NightwoodToilet.MapEntry: Унитаз из ночной древесины
+NightwoodWorkbench.MapEntry: Верстак из ночной древесины
+QuartzToilet.MapEntry: Кварцевый унитаз
+QuartzSofa.MapEntry: Кварцевый диван
+QuartzSink.MapEntry: Кварцевая раковина
+QuartzPiano.MapEntry: Кварцевое пианино
+QuartzLantern.MapEntry: Кварцевый фонарь
+QuartzLamp.MapEntry: Кварцевая лампа
+QuartzDresser.MapEntry: Кварцевый комод
+QuartzClock.MapEntry: Кварцевые часы
+QuartzChest.MapEntry: Кварцевый сундук
+QuartzChandelier.MapEntry: Кварцевая люстра
+QuartzCandle.MapEntry: Кварцевая свеча
+QuartzCandelabra.MapEntry: Кварцевый Канделябр
+QuartzBookcase.MapEntry: Кварцевый книжный шкаф
+QuartzBed.MapEntry: Кварцевая кровать
+QuartzBath.MapEntry: Кварцевая ванна
+// DepthsVanityBanners.MapEntry: Banner
+DepthsOtherworldlyMusicBox.MapEntry: Музыкальная шкатулка
+AltarOfGems.MapEntry: Алтарь самоцветов
+ForTheSakeOfMakingGadgets.MapEntry: Ради создания гаджетов
+ImPurrSonation.MapEntry: Я-Мур-лычу
+Mercury.MapEntry: Ртуть
+MusiciansBestFriend.MapEntry: Лучшие друзья музыкантов
+ChaosCat.MapEntry: Кошка Хаоса
+DONOTDRINK.MapEntry: НЕ ПИТЬ
+WaterGeyser.MapEntry: Водный гейзер
+PlacedGems.MapEntry: Размещённые самоцветы
+PlacedOnyx.MapEntry: Размещённый оникс
+OnyxStone.MapEntry: Оникс в камне
+OnyxGemtree.MapEntry: Ониксовое самоцветное дерево
+PetrifiedTree.MapEntry: Окаменелое дерево
+TheUnknownDepthsBelow.MapEntry: Неизвестные нижние глубины
+NightwoodTree.MapEntry: Ночное дерево
+NightwoodTrappedChest.MapEntry: Сундук из ночной древесины
+QuartzTrappedChest.MapEntry: Кварцевый сундук
+// HangingShadowShrub.MapEntry: Hanging Shadow Shrub
+PetrifiedWoodBath.MapEntry: Ванна из Окаменевшей древесины
+PetrifiedWoodBookcase.MapEntry: Книжный шкаф из Окаменевшей древесины
+PetrifiedWoodCandelabra.MapEntry: Канделябр из Окаменевшей древесины
+PetrifiedWoodCandle.MapEntry: Свеча из Окаменевшей древесины
+PetrifiedWoodChair.MapEntry: Стул из Окаменевшей древесины
+PetrifiedWoodChandelier.MapEntry: Люстра из Окаменевшей древесины
+PetrifiedWoodChest.MapEntry: Сундук из Окаменевшей древесины
+PetrifiedWoodClock.MapEntry: Часы из Окаменевшей древесины
+PetrifiedWoodDresser.MapEntry: Комод из Окаменевшей древесины
+PetrifiedWoodLamp.MapEntry: Лампа из Окаменевшей древесины
+PetrifiedWoodLantern.MapEntry: Фонарь из Окаменевшей древесины
+PetrifiedWoodBedShaleSheetsAreImpossible.MapEntry: Кровать из Окаменевшей древесины
+PetrifiedWoodPiano.MapEntry: Пианино из Окаменевшей древесины
+PetrifiedWoodSink.MapEntry: Раковина из Окаменевшей древесины
+PetrifiedWoodSofa.MapEntry: Диван из Окаменевшей древесины
+PetrifiedWoodTable.MapEntry: Стол из Окаменевшей древесины
+PetrifiedWoodToilet.MapEntry: Унитаз из Окаменевшей древесины
+PetrifiedWoodTrappedChest.MapEntry: Сундук-ловушка из Окаменевшей древесины
+PetrifiedWoodWorkbench.MapEntry: Верстак из Окаменевшей древесины
+FelineTombstone.MapEntry: Кошачье надгробие

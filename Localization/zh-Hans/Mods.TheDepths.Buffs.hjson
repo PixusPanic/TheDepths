@@ -1,0 +1,77 @@
+CrystalSkin: {
+	DisplayName: 水晶皮肤
+	Description: 对水银免疫
+}
+
+FlaskofMercury: {
+	DisplayName: 武器灌注：水银
+	Description: 近战攻击会用水银使敌人沸腾
+}
+
+FreezingWater: {
+	DisplayName: 冷冻水
+	Description: 移动被完全禁止
+}
+
+LivingShadowSummonBuff: {
+	DisplayName: 影子
+	Description: 一个和你相似的人物将为你而战
+}
+
+MercuryBoiling: {
+	DisplayName: 汞中毒
+	Description: 缓慢流失生命值
+}
+
+MercuryFooting: {
+	DisplayName: 水银足
+	Description: 增加15%移动速度
+}
+
+MercuryPoisoning: {
+	DisplayName: 汞辐射
+	Description: 流失生命值并将降低移动速度
+}
+
+RelicsCurse: {
+	DisplayName: 圣物之咒
+	Description: 无法使用更多圣物
+}
+
+SilverSphereBuff: {
+	DisplayName: 白银珠
+	Description: 四颗白银珠将环绕你
+}
+
+ShadePetBuff: {
+	DisplayName: 影子体宠物
+	Description: '''"一个影子体将和你漂浮在一起!"'''
+}
+
+ShadowCatBuff: {
+	DisplayName: 暗影猫咪
+	Description: 这是影子猫咪，还是猫咪的影子?
+}
+
+PurpleflameJellyBuff: {
+	DisplayName: 紫焰水母
+	Description: 一只独特但稀有且是被动物种的水母，生活在水银中
+}
+
+MercuryContagion: {
+	DisplayName: 汞传染
+	Description: 每当敌人相互触碰时，疾病就会传染
+}
+
+PhantomFirecartBuff.DisplayName: 矿车
+OnyxMinecartBuff.DisplayName: 矿车
+
+NightmareHorseBuff: {
+	DisplayName: 梦魇马
+	Description: 一匹看上去很可怕的页岩马，由猎渊魔亲手铸造
+}
+
+BuffofaThousandYears: {
+	DisplayName: 迷你猎渊魔
+	Description: 迷你猎渊魔将用她的双手为你而战
+}

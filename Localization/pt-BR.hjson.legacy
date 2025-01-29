@@ -296,6 +296,11 @@ Mods: {
 				DisplayName: Chasmini
 				Description: Chasmini usará suas mãos para lutar por você
 			}
+
+			QuicksilverWetBuff: {
+				// DisplayName: Quicksilver Wet Buff
+				// Description: Mods.TheDepths.Buffs.QuicksilverWetBuff.Description
+			}
 		}
 
 		Items: {
@@ -1906,6 +1911,30 @@ Mods: {
 				DisplayName: Lápide de gato
 				Tooltip: "'Mesmo que morto, o mantemos vivo na memória e imortal pelos anos que virão.'"
 			}
+
+			ThoriumMod: {
+				SoulofFluorite: {
+					// DisplayName: Soul of Fluorite
+					// Tooltip: "'The essence of shaled creatures'"
+				}
+
+				SoulofFluoriteinaBottle: {
+					// DisplayName: Soul of Fluorite in a Bottle
+					// Tooltip: ""
+				}
+			}
+
+			FargoSouls: {
+				NightwoodEnchant: {
+					// DisplayName: Nightwood Enchant
+					// Tooltip: ""
+				}
+
+				QuartzEnchant: {
+					// DisplayName: Quartz Enchant
+					// Tooltip: ""
+				}
+			}
 		}
 
 		NPCs: {
@@ -2008,6 +2037,7 @@ Mods: {
 			QuicksilverTears.DisplayName: Lágrimas de Mercúrio
 			EmeraldEnergy.DisplayName: Energia Esmeralda
 			FelineTombstone.DisplayName: Lápide de gato
+			// MercuryEnchantExplosion.DisplayName: Mercury Enchant Explosion
 		}
 
 		Biomes: {

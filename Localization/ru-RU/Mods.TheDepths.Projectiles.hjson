@@ -1,0 +1,71 @@
+ShadePetProjectile.DisplayName: Тень-Питомец
+BlueExplosion.DisplayName: Синий взрыв
+BlueSphereYoyo.DisplayName: Синяя сфера йо-йо
+GemforgeCutscene.DisplayName: Самоцветная кузня
+CrystalBall.DisplayName: Кристальный шар
+CrystalBallPassive.DisplayName: Кристальная сфера
+DiamondArrow.DisplayName: Алмазная стрела
+DiamondBolt.DisplayName: Алмазный заряд
+DiamondDustProj.DisplayName: Алмазная пыль
+GeodeCrystalSummon.DisplayName: Жеодовый кристалл
+GlitteringGoldenLine.DisplayName: Сверкающая золотая линяя
+LumpOfCoal.DisplayName: Кусок угля
+OnyxBolt.DisplayName: Ониксовый заряд
+OnyxHook.DisplayName: Ониксовый крюк
+QuartzChunk.DisplayName: Кварц
+RubyBolt.DisplayName: Рубиновый заряд
+SapphireShovelProj.DisplayName: Заряд воды
+SapphireSpit.DisplayName: "{$Mods.TheDepths.Projectiles.SapphireShovelProj.DisplayName}"
+Shaderang.DisplayName: Тенеранг
+ShadowBall.DisplayName: Большой теневой шар
+ShadowBall2.DisplayName: Теневой шар
+ShadowBall3.DisplayName: Маленький теневой шар
+ShadowClawBottom.DisplayName: Теневой коготь
+ShadowClawMiddle.DisplayName: Теневой коготь
+ShadowClawTip.DisplayName: Теневой коготь
+SilverSpheres.DisplayName: Серебряная сфера
+SilverStar.DisplayName: Серебряная звезда
+SkyFallRain.DisplayName: Ртутный дождь
+SkyfallYoyo.DisplayName: Небопад йо-йо
+Steelocanth.DisplayName: Сталекант
+LivingShadowSummonProj.DisplayName: Силуэт
+CoreGlobe.DisplayName: Глобус ядра
+// WhiteLightning.DisplayName: White Lightning
+WhiteLightningOrb.DisplayName: Сфера белой молнии
+WhiteLightningOrb2.DisplayName: Сфера белой молнии
+WhiteLightningOrb3.DisplayName: Сфера белой молнии
+WhiteLightningTo2.DisplayName: Белая молния
+WhiteLightningTo1.DisplayName: Белая молния
+WhiteLightningTo3.DisplayName: Белая молния
+QuicksilverBomb.DisplayName: Ртутная бомба
+QuicksilverGrenade.DisplayName: Ртутная граната
+QuicksilverMine.DisplayName: Ртутная мина
+QuicksilverRocket.DisplayName: Ртутная ракета
+QuicksilverSnowmanRocket.DisplayName: Ртутная ракета снеговика
+SilverBobber.DisplayName: Серебряный поплавок
+ShadowflameEmber1.DisplayName: Уголёк теневого пламени
+ShadowCat.DisplayName: Теневая кошка
+ShadowflameEmber2.DisplayName: Уголёк теневого пламени
+ShadowflameEmber3.DisplayName: Уголёк теневого пламени
+POWHammerSwing.DisplayName: Вращение POW молота
+POWEffect.DisplayName: POW Эффект
+// MercuryExplosion1.DisplayName: Mercury Explosion
+MercuryExplosion.DisplayName: Ртутный взрыв
+ShadeBladeLeft.DisplayName: Теневое лезвие
+ShadeBladeRight.DisplayName: Теневое лезвие
+ShadeBladeCalculator.DisplayName: Калькулятор теневого лезвия
+ChasmeRay.DisplayName: Рубиновый луч
+ChasmeShockwave.DisplayName: Рубиновая шоковая волна
+MercuryMossFishingBobber.DisplayName: Поплавок ртутного мха
+WaterGeyser.DisplayName: Водный гейзер
+AquaArrow.DisplayName: Аква стрела
+OnyxExplosion.DisplayName: Ониксовый взрыв
+SapphireSerpentKite.DisplayName: Сапфировый воздушный змей
+MiniChasme.DisplayName: Мини-Чазм
+MiniChasmeHand.DisplayName: Рука Мини-Чазма
+ShalestoneHand.DisplayName: Сланцевая рука
+ShalestoneSlam.DisplayName: Сланцевый хлопок
+ShadowLash.DisplayName: Теневой хлыст
+QuicksilverTears.DisplayName: Ртутные слёзы
+EmeraldEnergy.DisplayName: Изумрудная энергия
+FelineTombstone.DisplayName: Кошачье надгробие

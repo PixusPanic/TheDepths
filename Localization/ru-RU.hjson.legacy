@@ -300,6 +300,11 @@ Mods: {
 				DisplayName: Чазмини
 				Description: Чазмини использует свои руки, чтобы сражаться за вас
 			}
+
+			QuicksilverWetBuff: {
+				// DisplayName: Quicksilver Wet Buff
+				// Description: Mods.TheDepths.Buffs.QuicksilverWetBuff.Description
+			}
 		}
 
 		Items: {
@@ -1910,6 +1915,30 @@ Mods: {
 				DisplayName: Кошачье надгробие
 				Tooltip: "'Хоть они и ушли, мы будем помнить их и увековечим их на долгие годы'"
 			}
+
+			ThoriumMod: {
+				SoulofFluorite: {
+					// DisplayName: Soul of Fluorite
+					// Tooltip: "'The essence of shaled creatures'"
+				}
+
+				SoulofFluoriteinaBottle: {
+					// DisplayName: Soul of Fluorite in a Bottle
+					// Tooltip: ""
+				}
+			}
+
+			FargoSouls: {
+				NightwoodEnchant: {
+					// DisplayName: Nightwood Enchant
+					// Tooltip: ""
+				}
+
+				QuartzEnchant: {
+					// DisplayName: Quartz Enchant
+					// Tooltip: ""
+				}
+			}
 		}
 
 		NPCs: {
@@ -2012,6 +2041,7 @@ Mods: {
 			QuicksilverTears.DisplayName: Ртутные слёзы
 			EmeraldEnergy.DisplayName: Изумрудная энергия
 			FelineTombstone.DisplayName: Кошачье надгробие
+			// MercuryEnchantExplosion.DisplayName: Mercury Enchant Explosion
 		}
 
 		Biomes: {

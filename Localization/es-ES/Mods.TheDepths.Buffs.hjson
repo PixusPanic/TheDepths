@@ -1,0 +1,77 @@
+CrystalSkin: {
+	DisplayName: Piel de Cristal
+	Description: Inmune al Mercurio
+}
+
+FlaskofMercury: {
+	DisplayName: Imbuir Arma: Mercurio
+	Description: Los ataque cuerpo a cuerpo hierven con mercurio al enemigo
+}
+
+FreezingWater: {
+	DisplayName: Agua Congelante
+	Description: El moviemiento es deshabilitado en su totalidad
+}
+
+LivingShadowSummonBuff: {
+	DisplayName: Silueta
+	Description: Una figura similar a ti, peleara por ti.
+}
+
+MercuryBoiling: {
+	DisplayName: Envenenamiento por Mercurio
+	Description: Pierdes vida Lentamente
+}
+
+MercuryFooting: {
+	DisplayName: Caminata Mercurial
+	Description: Aumenta 15% la velocidad de movimiento
+}
+
+MercuryPoisoning: {
+	DisplayName: Radiación por Mercurio
+	Description: Pierdes vida y tu movimiento se realentiza
+}
+
+RelicsCurse: {
+	DisplayName: Maldición de la Reliquia
+	Description: No puedes usar más Reliquias
+}
+
+SilverSphereBuff: {
+	DisplayName: Esfera de Plata
+	Description: Cuatro Esferas de Plata orbita a tu alrededor
+}
+
+ShadePetBuff: {
+	DisplayName: Mascota Sombría
+	Description: '''"Una Sombra flota alrededor de tí!"'''
+}
+
+ShadowCatBuff: {
+	DisplayName: Gato Sombrío
+	Description: Es acaso la sombra de un gato, o un gato en las sombras?
+}
+
+PurpleflameJellyBuff: {
+	DisplayName: Medusa de Flama Purpura
+	Description: Una rara y unica especie pasiva de medusa que vive en el Mercurio
+}
+
+MercuryContagion: {
+	DisplayName: Contagio Mercurial
+	Description: Cuando los enemigos colisionan, su enfermedad se propaga
+}
+
+PhantomFirecartBuff.DisplayName: Carro de mina
+OnyxMinecartBuff.DisplayName: Carro de mina
+
+NightmareHorseBuff: {
+	DisplayName: Caballo de Pesadilla
+	Description: Un fantamsmagorico caballo de Esquisto construido por la mismisima Chasme
+}
+
+BuffofaThousandYears: {
+	DisplayName: Chasmini
+	Description: Chasmini usara sus manos para pelear contigo
+}

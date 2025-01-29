@@ -1,0 +1,55 @@
+Items: {
+	NightwoodEnchant: {
+		DisplayName: Nightwood Enchantment
+		Tooltip:
+			'''
+			Quicksilver debuffs don't damage you
+			While afflicted with any (non-Potion/Mana Sickness/Water Candle) debuff, attacks are accompanied by shadowflame balls that deal magic damage
+			Grants immunity to Mercury Boiling
+			Reduces damage from touching quicksilver
+			'"I can't believe this isn't wood!"'
+			'''
+	}
+
+	QuartzEnchant: {
+		DisplayName: Quartz Enchantment
+		Tooltip:
+			'''
+			Grants immunity to quicksilver
+			You have normal movement and can swim in quicksilver
+			While standing in quicksilver or quicksilver soaked, your attacks spawn explosions
+			While afflicted with any debuff or standing in quicksilver, attacks are accompanied by shadowflame balls that deal magic damage
+			Quicksilver debuffs don't damage you
+			Grants immunity to Mercury Boiling
+			'The Depths call'
+			'''
+	}
+
+	MercuryEnchant: {
+		DisplayName: Mercury Enchantment
+		Tooltip:
+			'''
+			Emits a toxic aura around yourself while enemies are close
+			Enemies in the mercury ring take 1.1x damage and spread Mercury Contagion
+			'Mercury isn't something to be taken lightly' 
+			'''
+	}
+}
+
+Buffs: {
+	QuicksilverWetBuff: {
+		DisplayName: Quicksilver Soaked
+		Description: You are dripping quicksilver
+	}
+
+	MercuryAmplifyBuff: {
+		DisplayName: Mercury Amplify
+		Description: Mods.TheDepths.FargosSouls.Buffs.MercuryAmplifyBuff.Description
+	}
+}
+
+Projectiles: {
+	MercuryEnchantExplosion.DisplayName: Mercury Explosion
+	MercuryAuraProj.DisplayName: Mercury Aura
+	MercuryBall.DisplayName: Mercury Ball
+}

@@ -1,0 +1,71 @@
+ShadePetProjectile.DisplayName: Pet Sombra
+BlueExplosion.DisplayName: Explosão Azul
+BlueSphereYoyo.DisplayName: Ioiô de Esfera Azul
+GemforgeCutscene.DisplayName: Forja das Gemas
+CrystalBall.DisplayName: Bola de Cristal
+CrystalBallPassive.DisplayName: Orbe de Cristal
+DiamondArrow.DisplayName: Flecha de Diamante
+DiamondBolt.DisplayName: Dardo de Diamante
+DiamondDustProj.DisplayName: Pó de Diamante
+GeodeCrystalSummon.DisplayName: Cristal de Geodo
+GlitteringGoldenLine.DisplayName: Linha Dourada Brilhante
+LumpOfCoal.DisplayName: Pedaço de Carvão
+OnyxBolt.DisplayName: Dardo Ônix
+OnyxHook.DisplayName: Gancho Ônix
+QuartzChunk.DisplayName: Quartzo
+RubyBolt.DisplayName: Dardo Rubi
+SapphireShovelProj.DisplayName: Dardo de Água
+SapphireSpit.DisplayName: "{$Mods.TheDepths.Projectiles.SapphireShovelProj.DisplayName}"
+Shaderang.DisplayName: Bumerangue das Sombras
+ShadowBall.DisplayName: Bola Sombria Grande
+ShadowBall2.DisplayName: Bola Sombria
+ShadowBall3.DisplayName: Bola Sombria Pequena
+ShadowClawBottom.DisplayName: Garra das Sombras
+ShadowClawMiddle.DisplayName: Garra das Sombras
+ShadowClawTip.DisplayName: Garra das Sombras
+SilverSpheres.DisplayName: Esfera de Prata
+SilverStar.DisplayName: Estrela Prata
+SkyFallRain.DisplayName: Chuva de Mercúrio
+SkyfallYoyo.DisplayName: Ioiô Queda-do-Céu
+Steelocanth.DisplayName: Açoacanto
+LivingShadowSummonProj.DisplayName: Silhueta
+CoreGlobe.DisplayName: Núcleo Globo
+// WhiteLightning.DisplayName: White Lightning
+WhiteLightningOrb.DisplayName: Orbe Relâmpago Branco
+WhiteLightningOrb2.DisplayName: Orbe Relâmpago Branco
+WhiteLightningOrb3.DisplayName: Orbe Relâmpago Branco
+WhiteLightningTo2.DisplayName: Relâmpago Branco
+WhiteLightningTo1.DisplayName: Relâmpago Branco
+WhiteLightningTo3.DisplayName: Relâmpago Branco
+QuicksilverBomb.DisplayName: Bomba de Mercúrio
+QuicksilverGrenade.DisplayName: Granada de Mercúrio
+QuicksilverMine.DisplayName: Mina de Mercúrio
+QuicksilverRocket.DisplayName: Foguete de Mercúrio
+QuicksilverSnowmanRocket.DisplayName: Foguete de Boneco de Neve de Mercúrio
+SilverBobber.DisplayName: Bóia de Prata
+ShadowflameEmber1.DisplayName: Brasa de Chama Sombria
+ShadowCat.DisplayName: Gato Sombra
+ShadowflameEmber2.DisplayName: Brasa de Chama Sombria
+ShadowflameEmber3.DisplayName: Brasa de Chama Sombria
+POWHammerSwing.DisplayName: Balanço do Martelo POW
+POWEffect.DisplayName: Efeito POW
+// MercuryExplosion1.DisplayName: Mercury Explosion
+MercuryExplosion.DisplayName: Explosão Mercurial
+ShadeBladeLeft.DisplayName: Lâmina Sombria
+ShadeBladeRight.DisplayName: Lâmina Sombria
+ShadeBladeCalculator.DisplayName: Calculadora Lâmina Sombria
+ChasmeRay.DisplayName: Raio Rubi
+ChasmeShockwave.DisplayName: Onda de Choque Rubi
+MercuryMossFishingBobber.DisplayName: Boia de Pesca com Musgo de Mercúrio
+WaterGeyser.DisplayName: Gêiser de Água
+AquaArrow.DisplayName: Flecha Aqua
+OnyxExplosion.DisplayName: Explosão Ônix
+SapphireSerpentKite.DisplayName: Pipa da Serpente Safira
+MiniChasme.DisplayName: Mini-Chasme
+MiniChasmeHand.DisplayName: Mão Mini-Chasme
+ShalestoneHand.DisplayName: Mão Xisto
+ShalestoneSlam.DisplayName: Golpe Xisto
+ShadowLash.DisplayName: Chicote Sombrio
+QuicksilverTears.DisplayName: Lágrimas de Mercúrio
+EmeraldEnergy.DisplayName: Energia Esmeralda
+FelineTombstone.DisplayName: Lápide de gato

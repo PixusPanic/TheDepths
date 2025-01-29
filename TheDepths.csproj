@@ -16,6 +16,9 @@
     <LangVersion>preview</LangVersion>
   </PropertyGroup>
   <ItemGroup>
+    <AdditionalFiles Remove="Localization\en-US\en-US.hjson" />
+  </ItemGroup>
+  <ItemGroup>
     <None Remove="Shaders\ModdersToolkit_Shader.fx" />
   </ItemGroup>
   <ItemGroup>
@@ -24,6 +27,21 @@
   <ItemGroup>
     <Reference Include="CalamityMod">
       <HintPath>..\..\ModReader\CalamityMod\CalamityMod.dll</HintPath>
+    </Reference>
+    <Reference Include="CerebralMod">
+      <HintPath>..\ModAssemblies\CerebralMod_v0.6.5.dll</HintPath>
+    </Reference>
+    <Reference Include="Fargowiltas">
+      <HintPath>..\..\ModReader\Fargowiltas\Fargowiltas.dll</HintPath>
+    </Reference>
+    <Reference Include="FargowiltasSouls">
+      <HintPath>..\..\ModReader\FargowiltasSouls\FargowiltasSouls.dll</HintPath>
+    </Reference>
+    <Reference Include="Luminance">
+      <HintPath>..\..\ModReader\Luminance\Luminance.dll</HintPath>
+    </Reference>
+    <Reference Include="ThoriumMod">
+      <HintPath>..\ModAssemblies\ThoriumMod_v1.7.2.0.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>
