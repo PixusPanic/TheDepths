@@ -125,7 +125,6 @@ namespace TheDepths
 			IL_UIWorldCreation.ShowOptionDescription += DepthsSelectionMenu.ILShowOptionDescription;
 			On_UIWorldCreation.SetDefaultOptions += DepthsSelectionMenu.OnSetDefaultOptions;
 			On_UIWorldListItem.ctor += WorldIconOverlay;
-			IL_AchievementAdvisor.Initialize += EditAchievementRecomendations;
 			On_AchievementAdvisorCard.IsAchievableInWorld += IsAchieveableInConfectionWorld;
 			On_AchievementsHelper.HandleSpecialEvent += PreventHotInHereFromObtaining;
 
@@ -191,7 +190,6 @@ namespace TheDepths
 			//UI edits
 			IL_UIGenProgressBar.DrawSelf -= ProgressBarEdit;
 			On_UIWorldListItem.ctor -= WorldIconOverlay;
-			IL_AchievementAdvisor.Initialize -= EditAchievementRecomendations;
 			On_AchievementAdvisorCard.IsAchievableInWorld -= IsAchieveableInConfectionWorld;
 			On_AchievementsHelper.HandleSpecialEvent -= PreventHotInHereFromObtaining;
 
@@ -393,44 +391,7 @@ namespace TheDepths
 			}
 			return orig.Invoke(self);
 		}
-
-		private void EditAchievementRecomendations(ILContext il)
-		{
-			ILCursor c = new ILCursor(il);
-			int achievementIndex_varNum = -1;
-
-			c.GotoNext(MoveType.Before, i => i.MatchLdarg(0), i => i.MatchLdfld<AchievementAdvisor>("_cards"), i => i.MatchCall<Main>("get_Achievements"), i => i.MatchLdstr("ITS_GETTING_HOT_IN_HERE"), i => i.MatchCallvirt<AchievementManager>("GetAchievement"), i => i.MatchLdloc(out achievementIndex_varNum));
-			c.EmitLdloca(achievementIndex_varNum);
-			c.EmitLdarga(0);
-			c.EmitDelegate((ref float num, ref AchievementAdvisor self) =>
-			{
-				List<AchievementAdvisorCard> _cards = self.GetCards();
-				_cards.Add(new AchievementAdvisorCard(ModContent.GetInstance<MysteriesOfTheDark>().Achievement, num++));
-				self.SetCards(_cards);
-			});
-
-			c.GotoNext(MoveType.Before, i => i.MatchLdarg(0), i => i.MatchLdfld<AchievementAdvisor>("_cards"), i => i.MatchCall<Main>("get_Achievements"), i => i.MatchLdstr("MINER_FOR_FIRE"), i => i.MatchCallvirt<AchievementManager>("GetAchievement"), i => i.MatchLdloc(out achievementIndex_varNum));
-			c.EmitLdloca(achievementIndex_varNum);
-			c.EmitLdarga(0);
-			c.EmitDelegate((ref float num, ref AchievementAdvisor self) =>
-			{
-				List<AchievementAdvisorCard> _cards = self.GetCards();
-				_cards.Add(new AchievementAdvisorCard(ModContent.GetInstance<PickaxeOfPoison>().Achievement, num++));
-				self.SetCards(_cards);
-			});
-
-			c.GotoNext(MoveType.Before, i => i.MatchLdarg(0), i => i.MatchLdfld<AchievementAdvisor>("_cards"), i => i.MatchCall<Main>("get_Achievements"), i => i.MatchLdstr("STILL_HUNGRY"), i => i.MatchCallvirt<AchievementManager>("GetAchievement"), i => i.MatchLdloc(out achievementIndex_varNum));
-			c.EmitLdloca(achievementIndex_varNum);
-			c.EmitLdarga(0);
-			c.EmitDelegate((ref float num, ref AchievementAdvisor self) =>
-			{
-				List<AchievementAdvisorCard> _cards = self.GetCards();
-				_cards.Add(new AchievementAdvisorCard(ModContent.GetInstance<HeartBreaker>().Achievement, num++));
-				self.SetCards(_cards);
-			});
-		}
 		#endregion
-
 
 		#region LavaReplacerWorldGen
 		private void IL_Liquid_SettleWaterAt(ILContext il)

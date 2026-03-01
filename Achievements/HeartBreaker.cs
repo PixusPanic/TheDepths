@@ -13,5 +13,7 @@ namespace TheDepths.Achievements
 		}
 
 		public override Position GetDefaultPosition() => new After("STILL_HUNGRY");
+
+		public override Position GetAdvisorPosition() => new After("STILL_HUNGRY");
 	}
 }

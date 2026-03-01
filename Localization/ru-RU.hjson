@@ -2136,6 +2136,7 @@ Mods: {
 		}
 
 		Keybinds.GroundSlam.DisplayName: Удар по земле
+		// Liquids.Quicksilver.MapEntry: Quicksilver
 	}
 }
 

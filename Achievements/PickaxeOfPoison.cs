@@ -15,5 +15,7 @@ namespace TheDepths.Achievements
 		}
 
 		public override Position GetDefaultPosition() => new Before("STILL_HUNGRY");
+
+		public override Position GetAdvisorPosition() => new After("MINER_FOR_FIRE");
 	}
 }

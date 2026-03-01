@@ -16,5 +16,7 @@ namespace TheDepths.Achievements
 		}
 
 		public override Position GetDefaultPosition() => new After("MINER_FOR_FIRE");
+
+		public override Position GetAdvisorPosition() => new After("ITS_GETTING_HOT_IN_HERE");
 	}
 }
