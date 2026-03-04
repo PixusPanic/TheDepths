@@ -1,4 +1,3 @@
-v1.0.5.6
+v1.0.5.7
 =========================
-Fixed The Depths for tmod version v2026.02. Achievement advisors should now be better supported
-Slightly increased the middle biome buffer in drunk seeds, basically when near the middle of 2 underworld biomes, there is less flickering between transitions
+Fixed critical issue where the achievement advisor potentially could unload other mod achievement advisor positions

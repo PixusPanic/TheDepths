@@ -166,13 +166,6 @@ namespace TheDepths
 			Detour_OnKill = new Hook(NPCLoader_OnKill, On_NPCLoader_OnKill);
 			if (Detour_OnKill != null)
 				Detour_OnKill.Apply();
-
-			//Edit the init BEFORE calling
-			if (!Main.dedServ)
-			{
-				Main.AchievementAdvisor.SetCards(new List<AchievementAdvisorCard>());
-				Main.AchievementAdvisor.Initialize();
-			}
 		}
 
 		public override void Unload()
@@ -229,13 +222,6 @@ namespace TheDepths
 
 			if (Detour_OnKill != null)
 				Detour_OnKill.Dispose();
-
-			//Edit the init BEFORE calling
-			if (!Main.dedServ)
-			{
-				Main.AchievementAdvisor.SetCards(new List<AchievementAdvisorCard>());
-				Main.AchievementAdvisor.Initialize();
-			}
 
 			GroundSlamKeybind = null;
 			TheDepthsReflectionUtils.Unload();
